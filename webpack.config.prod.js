@@ -3,7 +3,7 @@ const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const baseConfig = require('./webpack.config.base')
 
 module.exports = merge(baseConfig, {
-  mode: 'production',
+  mode: 'production', // set bundle mode to production (minified version)
   plugins: [new BundleAnalyzerPlugin({  // plugin for outputing static report analyzer
     analyzerMode: 'static',
     openAnalyzer: false,

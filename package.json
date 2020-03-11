@@ -13,11 +13,11 @@
   },
   "author": "Lonewolf",
   "license": "ISC",
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rian-Sanjaya/react-boilerplate.git"
   },
-  "keywords": [],
   "bugs": {
     "url": "https://github.com/Rian-Sanjaya/react-boilerplate/issues"
   },
@@ -47,13 +47,14 @@
     "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "@babel/polyfill": "^7.8.7",
+    "react-hot-loader": "^4.12.19",
+    "@hot-loader/react-dom": "^16.12.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.7",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-hot-loader": "^4.12.19"
+    "react-dom": "^16.13.0"
   }
 }
