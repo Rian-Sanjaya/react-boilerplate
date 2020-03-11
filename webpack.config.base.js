@@ -12,9 +12,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,  // anything that end with .js
+        test: /\.(js|jsx)$/,  // anything that end with .js
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        // options: {  // move to .babelrc
+        //   presets: ['@babel/preset-env', '@babel/preset-react'],
+        //   plugins: ['@babel/plugin-proposal-class-properties']
+        // }
       },
       {
         test: /\.css$/, // anything that end with .css
@@ -23,9 +27,11 @@ module.exports = {
       }
     ]
   },
-  plugins: [new HTMLWebpackPlugin({
-    template: './src/index.html'
-  })],
+  plugins: [
+    new HTMLWebpackPlugin({
+      template: './src/index.html'
+    })
+  ],
   resolve: {
     alias: {"react-dom": "@hot-loader/react-dom"} // to get rid a warning in browser console: React-Hot-Loader: react-dom patch is not detected. React 16.6+ features may not work.
   }

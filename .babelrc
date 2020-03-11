@@ -16,7 +16,7 @@
   ],
   "plugins": [
     "react-hot-loader/babel", 
-    "@babel/plugin-proposal-class-properties", 
-    "@babel/plugin-syntax-dynamic-import"
+    "@babel/plugin-proposal-class-properties"
+    // "@babel/plugin-syntax-dynamic-import"   // to support javascript proposed features that aren't yet part of the official language specification
   ]
 }

@@ -8,6 +8,10 @@ class App extends React.Component {
     count: 0
   }
 
+  componentWillMount() {
+    console.log("component will mount")
+  }
+  
   render() {
     const { count } = this.state
 
